@@ -78,6 +78,10 @@ summary(df1$Etnia)
 #Plot
 #Um box plot 
 plot(df1$Idade~df1$Etnia, xlab = 'Etnia', ylab = 'Idade', main = 'Idade por Etnia')
-
-
 summary(lm(Idade~Etnia, data=df1))
+df1
+
+str(df)
+df1$Estado_Civil.cat <- factor(df1$Estado_Civil, labels=c("Solteiro", "Casado", "Separado"))
+df1
+str(df1)
